@@ -1,5 +1,5 @@
 import './style.css';
-import Expence from './Expence Tracker/expenxe'
+import Expence from './Expence Component/expenxe.js'
 function App() {
 
   const expenses = [
