@@ -32,9 +32,9 @@ function App() {
     },
   ];
 let expencearr=[]
-  for(let i=0;i<100;i++)
+  for(let i=0;i<expenses.length;i++)
   {
-    expencearr.push(<Expence title={expenses[0].title}  amount={expenses[0].amount}   locationofexpenditure={expenses[0].locationofexpenditure} />)
+    expencearr.push(<Expence title={expenses[i].title}  amount={expenses[i].amount}  date={expenses[i].date} locationofexpenditure={expenses[i].locationofexpenditure} />)
   } 
 
   return (

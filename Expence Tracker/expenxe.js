@@ -1,15 +1,17 @@
-import '../style.css';
+import '../Expence Tracker/expence.css';
+import Expensedate from './Expensedate';
+import Expensedetails from './Expensedetails';
 
-function expence(){
+function expence(props) {
     return (
-        <div className="App">
-     <h1>Expence Item</h1>
-
-     <p>Food Rs. 10</p>
-     <p>Petrol Rs. 100</p>
-     <p>Movie Rs. 1000</p>
- 
-    </div>
+        <div>
+            <div className="expense-item">
+                <div className='expense-item__description'>
+                    <Expensedetails title={props.title} amount={props.amount} locationofexpenditure={props.locationofexpenditure} />
+                    <Expensedate date={props.date}/>
+                </div>
+            </div>
+        </div>
     );
 
 }
