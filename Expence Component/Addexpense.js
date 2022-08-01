@@ -11,8 +11,11 @@ const Addexpense = () => {
     const [date,setdate]=useState('')
 
     const showdata =()=>{
-        console.log(amount,date,title)
+        console.log(date)
         console.log("hi")
+        setamount("")
+        settitle("")
+        setdate("")
     }
     
   return (
@@ -22,10 +25,10 @@ const Addexpense = () => {
     <input type="date"  placeholder='DATE' value={date} onChange={ e=> setdate(e.target.value)}/>
     <button onClick={showdata}>ADD</button>
 
-    <Expence  date={date} title={title} amount={amount} />
+    <Expence    date ={date} title={title} amount={amount} />
  </div>
  
   )    
 }
 
-export default Addexpense
+export default Addexpense;
